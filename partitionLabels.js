@@ -41,3 +41,30 @@ const partitionLabels = function (S) {
   }
   return answer
 };
+
+
+/*
+var partitionLabels = function(S) {
+  var lasts = Object.create(null);
+
+  for(var i = 0; i < S.length; i++) {
+    lasts[S[i]] = i;
+  }
+
+  var res = [];
+
+  for(var i = 0, curRight = null, prevRightIdx = -1; i < S.length; i++) {
+    if(curRight === null || lasts[S[i]] > curRight) {
+      curRight = lasts[S[i]];
+    }
+
+    if(i === curRight) {
+      res.push(i - prevRightIdx);
+      prevRightIdx = i;
+      curRight = null;
+    }
+  }
+
+  return res;
+};
+*/

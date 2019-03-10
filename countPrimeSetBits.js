@@ -30,3 +30,26 @@ var countPrimeSetBits = function(L, R) {
   }
   return count
 };
+
+/*
+var countPrimeSetBits = function(L, R) {
+  let marks = [ undefined, false, true, true, false, true, false, true, false, false, false, true, false, true, false,
+  false, false, true, false, true, false, false, false, true, false, false, false, false, false, true, false, true ];
+
+  let result = 0;
+  for (let i = L; i <= R; i++) {
+    if (marks[countBits(i)]) result += 1;
+  }
+  return result;
+
+  // n & (n - 1) 可以消掉最后一个1
+  function countBits(n) {
+    let result = 0;
+    while (n > 0) {
+      n &= n - 1;
+      result += 1;
+    }
+    return result;
+  }
+};
+*/
