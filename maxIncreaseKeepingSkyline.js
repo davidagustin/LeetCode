@@ -31,55 +31,19 @@ var maxIncreaseKeepingSkyline = function (grid) {
 };
 
 /*
+transpose = m => m[0].map((x,i) => m.map(x => x[i]))
+
 var maxIncreaseKeepingSkyline = function(grid) {
+    let rowMaxes = grid.map( row => Math.max(...row))
+    let colMaxes = transpose(grid).map( row => Math.max(...row))
 
-    let rowMax = 0;
-    let columnMax = 0;
-    let columnMaxAll = Array();
-    let rowMaxAll = Array();
-
-    let newGrid = grid;
-    let sum =0;
-
-    for(let i=0; i < grid.length; i++ ) {
-
-
-        for(let j = 0; j < grid[i].length; j++ ) {
-            if (grid[i][j] > columnMax) {
-                columnMax = grid[i][j];
-            }
-
-            if(grid[j][i] > rowMax) {
-                rowMax = grid[j][i];
-            }
-
+    let increase = 0;
+    for(let i = 0; i < grid.length; i++) {
+        for(let j = 0; j < grid[i].length; j++){
+            let newTotal = Math.min(rowMaxes[i], colMaxes[j])
+            increase += newTotal - grid[i][j];
         }
-
-
-        columnMaxAll.push(columnMax);
-        columnMax = 0;
-        rowMaxAll.push(rowMax);
-        rowMax = 0;
-
     }
-
-
-    for (let i= 0 ; i< grid.length; i++) {
-
-        for (let j = 0; j < grid.length; j++  ) {
-            if(rowMaxAll[i] > columnMaxAll[j] ) {
-                sum = sum + columnMaxAll[j] - grid[j][i];
-                newGrid[j][i] = columnMaxAll[j];
-
-             }  else {
-                sum = sum + rowMaxAll[i] - grid[j][i];
-                newGrid[j][i] = rowMaxAll[i];
-            }
-
-        }
-
-    }
-
-    return sum;
+    return increase
 };
 */

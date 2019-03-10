@@ -45,26 +45,27 @@ const partitionLabels = function (S) {
 
 /*
 var partitionLabels = function(S) {
-  var lasts = Object.create(null);
+    const ht = {};
+	let results = [];
 
-  for(var i = 0; i < S.length; i++) {
-    lasts[S[i]] = i;
-  }
-
-  var res = [];
-
-  for(var i = 0, curRight = null, prevRightIdx = -1; i < S.length; i++) {
-    if(curRight === null || lasts[S[i]] > curRight) {
-      curRight = lasts[S[i]];
+    for(let i = 0; i < S.length; i++) {
+    	if(!ht.hasOwnProperty(S.charAt(i))) {
+    		ht[S.charAt(i)] = {min: i, max: i};
+    	} else {
+    		ht[S.charAt(i)].max = i;
+    	}
     }
 
-    if(i === curRight) {
-      res.push(i - prevRightIdx);
-      prevRightIdx = i;
-      curRight = null;
-    }
-  }
+	for(char in ht) {
+		if(!results.length || ht[char].min > results[results.length - 1].max) {
+			results.push({min: ht[char].min, max: ht[char].max});
+		} else if(ht[char].min < results[results.length - 1].max && ht[char].max > results[results.length - 1].max) {
+			 results[results.length - 1].max = ht[char].max
+		}
+	}
 
-  return res;
+	return results.map(result => {
+		return result.max - result.min + 1;
+	});
 };
 */
