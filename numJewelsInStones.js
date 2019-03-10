@@ -14,3 +14,7 @@ var numJewelsInStones = function(J, S) {
   }
   return count;
 };
+
+/*
+const numJewelsInStones = (J, S) => S.split('').filter(char => J.indexOf(char) !== -1).length;
+*/
