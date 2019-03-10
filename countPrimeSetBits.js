@@ -1,6 +1,6 @@
 const isPrime = (num) => {
   for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
-    if(num % i === 0) {
+    if (num % i === 0) {
       return false;
     }
   }
@@ -13,7 +13,7 @@ const isPrime = (num) => {
  * @return {number}
  */
 
-var countPrimeSetBits = function(L, R) {
+var countPrimeSetBits = function (L, R) {
   let count = 0;
   let binary;
   for (let i = L; i <= R; i += 1) {
@@ -23,7 +23,9 @@ var countPrimeSetBits = function(L, R) {
       return int === '1'
     });
     binary = binary.map((num) => Number(num));
-    binary = binary.reduce((acc, value) => { return acc + value});
+    binary = binary.reduce((acc, value) => {
+      return acc + value
+    });
     if (isPrime(binary)) {
       count++;
     }
