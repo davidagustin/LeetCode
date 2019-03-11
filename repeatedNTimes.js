@@ -3,7 +3,7 @@
  * @return {number}
  */
 var repeatedNTimes = function(A) {
-  const target = A.length/2
+  const target = A.length/2;
   const hashMap = {};
   for (let i = 0; i < A.length; i++) {
     hashMap[A[i]] = hashMap[A[i]] + 1 || 1
