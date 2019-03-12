@@ -58,3 +58,67 @@ var uniquePathsIII = function (grid) {
   DFS(grid, startingX, startingY);
   return count;
 };
+
+/*
+var uniquePathsIII = function(grid) {
+  let res = 0,
+    obs = getNumObstacles(grid),
+    //calculate total num of squares we need to visit
+    totalEmptySquares = grid.length * grid[0].length - obs,
+    //track elements we have seen on path
+    visited = new Set()
+
+  const traverse = (r, c, path) => {
+    let cell = `r-${r} c-${c}`
+    if(visited.has(cell)) return
+
+    //out of bounds check
+    if(r < 0 || r > grid.length -1 || c < 0 || c > grid[0].length - 1 || grid[r][c] == -1) return false
+
+    //add cell to path
+    visited.add(cell)
+
+    //end condition
+    if(grid[r][c] == 2 && visited.size == totalEmptySquares) {
+      res++
+    }
+
+    //up
+    traverse(r-1, c, path)
+
+    //down
+    traverse(r+1, c, path)
+
+    //left
+    traverse(r, c-1, path)
+
+    //right
+    traverse(r, c+1, path)
+
+    //backtracking, so remove cell from path
+    visited.delete(cell)
+  }
+
+  //find starting cell
+  for(let row = 0; row < grid.length; row++) {
+    for(let col = 0; col < grid[0].length; col++) {
+      if(grid[row][col] == 1) {
+        traverse(row, col, [])
+      }
+    }
+  }
+
+  return res
+};
+
+function getNumObstacles(grid) {
+  let num = 0
+
+  for(let row = 0; row < grid.length; row++) {
+    for(let col = 0; col < grid[0].length; col++) {
+      if(grid[row][col] == -1) num++
+    }
+  }
+  return num
+}
+*/
