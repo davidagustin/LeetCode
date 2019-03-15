@@ -30,11 +30,14 @@ var findAndReplacePattern = function(words, pattern) {
   let patternSequence = patternCount(pattern);
   let answer = [];
   let word;
+
   for (let i = 0; i < words.length; i++) {
     word = words[i];
+
     if (patternCount(word) === patternSequence) {
       answer.push(word)
     }
+
   }
   return answer;
 };
