@@ -18,6 +18,7 @@ var hammingDistance = function (x, y) {
       count++;
     }
   }
+
   return count;
 };
 
