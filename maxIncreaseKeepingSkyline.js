@@ -1,7 +1,3 @@
-/**
- * @param {number[][]} grid
- * @return {number}
- */
 const gridMaxCheck = (grid, i, j) => {
   let maxNumberRow = 0;
   let maxNumberColumn = 0;
@@ -15,7 +11,11 @@ const gridMaxCheck = (grid, i, j) => {
     }
   }
   return Math.abs(Math.min(maxNumberRow, maxNumberColumn) - grid[i][j])
-}
+};
+/**
+ * @param {number[][]} grid
+ * @return {number}
+ */
 
 var maxIncreaseKeepingSkyline = function (grid) {
   let maxNumber = 0;
