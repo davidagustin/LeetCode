@@ -14,15 +14,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/numJewelsInStones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rangeSumBST.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="750">
@@ -58,11 +49,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sortArrayByParity.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/judgeCircle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/findAndReplacePattern.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -128,6 +137,8 @@
         <option value="$PROJECT_DIR$/sortArrayByParity.js" />
         <option value="$PROJECT_DIR$/flipAndInvertImage.js" />
         <option value="$PROJECT_DIR$/deckRevealedIncreasing.js" />
+        <option value="$PROJECT_DIR$/judgeCircle.js" />
+        <option value="$PROJECT_DIR$/findAndReplacePattern.js" />
       </list>
     </option>
   </component>
@@ -175,8 +186,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.deckRevealedIncreasing.js">
+  <component name="RunManager" selected="Node.js.findAndReplacePattern.js">
     <configuration name="deckRevealedIncreasing.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/deckRevealedIncreasing.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="findAndReplacePattern.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/findAndReplacePattern.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="findContestMatch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/findContestMatch.js" working-dir="$PROJECT_DIR$">
@@ -185,19 +199,16 @@
     <configuration name="insertIntoBST.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/insertIntoBST.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="uniqueMorseRepresentations.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/uniqueMorseRepresentations.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
     <configuration name="uniquePathsIII.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/uniquePathsIII.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.findAndReplacePattern.js" />
         <item itemvalue="Node.js.deckRevealedIncreasing.js" />
         <item itemvalue="Node.js.findContestMatch.js" />
         <item itemvalue="Node.js.uniquePathsIII.js" />
         <item itemvalue="Node.js.insertIntoBST.js" />
-        <item itemvalue="Node.js.uniqueMorseRepresentations.js" />
       </list>
     </recent_temporary>
   </component>
@@ -213,23 +224,23 @@
       <updated>1552208673857</updated>
       <workItem from="1552208675392" duration="4113000" />
       <workItem from="1552257038205" duration="26025000" />
-      <workItem from="1552618114324" duration="5680000" />
+      <workItem from="1552618114324" duration="7746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35818000" />
+    <option name="totallyTimeSpent" value="37884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="56" width="1625" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18951358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18951358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4276018" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4276018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -247,6 +258,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/findAndReplacePattern.js</url>
+          <line>41</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/numUniqueEmails.js">
@@ -373,6 +396,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/judgeCircle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findAndReplacePattern.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
